@@ -227,7 +227,8 @@ bin_PROGRAMS = \
 	lxc-unfreeze \
 	lxc-unshare \
 	lxc-usernsexec \
-	lxc-wait
+	lxc-wait \
+	lxc-uidmapshift
 
 if ENABLE_DEPRECATED
 bin_PROGRAMS += lxc-clone
@@ -270,6 +271,7 @@ lxc_usernsexec_SOURCES = tools/lxc_usernsexec.c
 lxc_checkpoint_SOURCES = tools/lxc_checkpoint.c
 lxc_user_nic_SOURCES = lxc_user_nic.c network.c network.h
 lxc_monitord_SOURCES = lxc_monitord.c
+lxc_uidmapshift_SOURCES = tools/lxc_uidmapshift.c
 
 if ENABLE_DEPRECATED
 lxc_clone_SOURCES = tools/lxc_clone.c
