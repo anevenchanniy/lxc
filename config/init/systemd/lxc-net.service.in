@@ -1,6 +1,7 @@
 [Unit]
 Description=LXC network bridge setup
 After=network-online.target
+Wants=network-online.target
 Before=lxc.service
 
 [Service]
